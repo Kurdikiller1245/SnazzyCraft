@@ -27,7 +27,7 @@ message.channel.send({embed: {
     description: "",
     fields: [{
         name: "General Commands",
-        value: "!!help - Display this message \n!!ip - show RelaXCraft ip \n!!hello \n!s add - add a suggestion \n/apply - apply for helper",
+        value: "!!help - Display this message \n!!ip - show SnazzyCraft ip \n!!hello \!!add - add a suggestion",
       },
       {
         name: "Staff Command",
@@ -48,7 +48,7 @@ message.channel.send({embed: {
     if(message.content.startsWith(prefix + "ip")){
         message.channel.send({embed:{
             color: 0x28d62b,
-            description: message.author + " RelaXCraft server ip is relaxcraft.mcalias.com"
+            description: message.author + " SnazzyCraft server ip is play.snazzycraft.net"
         }})
     }
     
@@ -56,7 +56,7 @@ message.channel.send({embed: {
     if(message.content.startsWith(prefix + "delete")){
         let args = message.content.split(" ").slice(1);
         let author = message.member;
-        let role = message.guild.roles.find('name', "Staff Team");
+        let role = message.guild.roles.find('name', "Support Team");
         if(author.roles.has(role.id)){
             if(!args[0]){
                 message.delete();
