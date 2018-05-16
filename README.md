@@ -1,2 +1,2 @@
-# SnazzyCraft
-s
+# RelaXCraft
+RelaXCraft Bot
