@@ -23,7 +23,7 @@ message.channel.send({embed: {
       name: message.author.tag,
       icon_url: message.author.avatarURL
     },
-    title: "RelaXCraft Help",
+    title: "SnazzyCraft Help",
     description: "",
     fields: [{
         name: "General Commands",
